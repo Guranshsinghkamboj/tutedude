@@ -1,142 +1,122 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <title>w.h.o Navbar </title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Laundry Service</title>
   <style>
-     .book
-        {
-            padding-left: 110px;
-            background-color: darkcyan;
-            padding-top: 30px;
-            padding-bottom: 30px;
-            border-radius: 15px;
-            
-        }
-    .img {
-        position: relative;
-        bottom: 30px;
-    }
-    .bodyd
-    {
-        display: flex;
-        padding: 200px;
-        gap: 200px;
-    }
     body {
       margin: 0;
       font-family: Arial, sans-serif;
+      background: #fff;
+      color: #333;
+      font-size: 20px; /* Increased base font size */
     }
-    .navbar {
+
+    /* Header */
+    header {
       display: flex;
-      align-items: center;
       justify-content: space-between;
-      background: #ffffff;
-      padding: 10px 30px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      position: sticky;
-      top: 0;
+      align-items: center;
+      padding: 20px 40px;
+      background: #f9f9f9;
+      font-size: 16px; /* Keep nav smaller */
     }
+
     .logo {
-      display: flex;
-      align-items: center;
-      font-size: 1.4rem;
       font-weight: bold;
-      color: #333;
+      font-size: 20px;
     }
 
-    .logo img {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      margin-right: 10px;
-    }
-    .nav-links {
-      list-style: none;
-      display: flex;
-      gap: 25px;
-    }
-
-    .nav-links li {
-      display: inline;
-    }
-
-    .nav-links a {
+    nav a {
+      margin: 0 15px;
       text-decoration: none;
-      color: #333;
+      color: #555;
       font-weight: 500;
-      transition: color 0.3s;
     }
 
-    .nav-links a:hover {
-      color: #007bff;
+    .username {
+      background: #eaf6ff;
+      padding: 8px 14px;
+      border-radius: 10px;
+      color: #1e90ff;
     }
-    .right {
+
+    /* Hero Section */
+    .hero {
       display: flex;
+      justify-content: space-between;
       align-items: center;
-      gap: 15px;
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+      gap: 30px;
     }
 
-    .right img {
-      width: 35px;
-      height: 35px;
-      border-radius: 50%;
-      border: 2px solid #ddd;
+    .hero-text h1 {
+      font-size: 42px; /* Increased heading size */
+      font-weight: bold;
+      margin-bottom: 15px;
     }
 
-    .btn {
-      padding: 8px 16px;
-      background: #007bff;
+    .hero-text h1 span {
+      color: #1e90ff;
+    }
+
+    .hero-text p {
+      font-size: 18px;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    .btn-primary {
+      background: #1e90ff;
       color: white;
+      padding: 14px 24px;
       border: none;
-      border-radius: 20px;
+      border-radius: 8px;
       cursor: pointer;
-      font-size: 0.9rem;
-      transition: background 0.3s;
+      font-size: 18px;
     }
 
-    .btn:hover {
-      background: #0056b3;
+    .hero img {
+      max-width: 380px; /* Slightly bigger image */
+      width: 500px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+      }
+      .hero img {
+        max-width: 250px;
+      }
     }
   </style>
 </head>
 <body>
+  <header>
+    <div class="logo">Logo</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Services</a>
+      <a href="#">About Us</a>
+      <a href="#">Contact Us</a>
+    </nav>
+    <div class="username">Username</div>
+  </header>
 
-  <nav class="navbar">
-    <!-- Logo -->
-    <div class="logo">
-      <img src="https://download.logo.wine/logo/PlayStation/PlayStation-Logo.wine.png" alt="Logo">
-      MyBrand
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Revitalize Your Clothes with Expert <span>Laundry Services!</span></h1>
+      <p>From premium dry cleaning to swift wash and fold, we deliver care and convenience. Schedule a pickup and rediscover the freshness of your clothes today!</p>
+      <button class="btn-primary">Book a service today!</button>
     </div>
-
-    <!-- Navigation links -->
-    <ul class="nav-links">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Catalog</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-
-    <!-- Right section -->
-    <div class="right">
-   
-      <button class="btn">Sign Up</button>
+    <div class="hero-image">
+      <img src="https://media.istockphoto.com/id/156396667/vector/cartoon-washing-machine.jpg?s=612x612&w=0&k=20&c=2EryUedJ5uBqo34gXKc46JtoCxxSmtLlKgg4kS2kAy8=" alt="Laundry Machine">
     </div>
-  </nav>
- <div class="bodyd">
-        <div class="text">
-    <h1 style="font-size:xxx-large;">   Revitalize your     
-   </h1>
-    <h1 style="font-size:xxx-large;">Clothes with expert</h1>
-    <h1 style="color: rgb(2, 255, 255); font-size: xxx-large;">Laundry Services!</h1>
-    <p style="font-size: x-large;">An efficient laundry solution designed to simplify <br> washing, drying, and organizing clothes for <br>households and businesses.</p>
-  <div class="book">
-    <a href="#">
-             BOOK  NOW
-   </a></div>
-</div>
-    <div class="img">
-        <img src="https://static.vecteezy.com/system/resources/previews/025/446/927/non_2x/clean-washing-machine-cartoon-illustration-vector.jpg" alt="washing" width="500px"> 
-    </div>
-    </div>
+  </section>
 </body>
 </html>
